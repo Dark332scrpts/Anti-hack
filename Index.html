@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Game</title>
+<style>
+html,body{margin:0;padding:0;background:#000;overflow:hidden;font-family:sans-serif}
+#c{display:block}
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+
+<script>
+(()=>{var _0x5a3f=["width","height","innerWidth","innerHeight","fillStyle","fillRect","random","floor","fillText","30px Arial","white","Game Over","Score: ","red","green","click"];function _0x2e9a(_0x4c93){return _0x5a3f[_0x4c93]}var c=document.getElementById("c"),x=c.getContext("2d"),w,h,s=0,t=800,a={},r=function(){c[_0x2e9a(0)]=w=window[_0x2e9a(2)],c[_0x2e9a(1)]=h=window[_0x2e9a(3)]};window.onresize=r;r();var p=function(){a.x=Math[_0x2e9a(7)](Math[_0x2e9a(6)]()*(w-60));a.y=Math[_0x2e9a(7)](Math[_0x2e9a(6)]()*(h-60))};p();var d=function(){x[_0x2e9a(4)]="black";x[_0x2e9a(5)](0,0,w,h);x[_0x2e9a(4)]=_0x2e9a(14);x[_0x2e9a(5)](a.x,a.y,50,50);x[_0x2e9a(4)]=_0x2e9a(10);x.font=_0x2e9a(9);x[_0x2e9a(8)](_0x2e9a(12)+s,20,40)};var g=function(){x[_0x2e9a(4)]="rgba(0,0,0,.7)";x[_0x2e9a(5)](0,0,w,h);x[_0x2e9a(4)]="red";x.font="50px Arial";x[_0x2e9a(8)](_0x2e9a(11),w/2-140,h/2)};var l=true;var loop=function(){if(!l)return;d();setTimeout(loop,t)};loop();window.addEventListener(_0x2e9a(15),function(e){if(!l)return;var mx=e.clientX,my=e.clientY;if(mx>a.x&&mx<a.x+50&&my>a.y&&my<a.y+50){s++;t=Math.max(100,t-30);p()}else{l=false;g()}})})();
+</script>
+</body>
+</html>
